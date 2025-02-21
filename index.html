@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de México</title>
+    <link href="styles.css" rel="stylesheet"> <!-- Vincula el CSS externo -->
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Bandera de México</h1> <!-- Título visible en la pantalla -->
+
+        <div class="row align-items-center">
+            <!-- Sangre de nuestros héroes nacionales Section -->
+            <div class="color-column">
+                <div class="color-box" id="redBox"></div>
+                <div class="controls">
+                    <label for="redRange" class="form-label">Sangre de nuestros héroes nacionales:</label>
+                    <input type="range" id="redRange" class="form-range" min="0" max="255" value="255">
+                </div>
+                <p>Hex: <span id="redHex">#FF0000</span></p>
+            </div>
+
+            <!-- Eagle Silhouette Section -->
+            <div class="eagle-column">
+                <div class="eagle"></div>
+                <p class="union-text">Unión</p> <!-- Texto "Unión" debajo de la imagen -->
+            </div>
+
+            <!-- Esperanza Section -->
+            <div class="color-column">
+                <div class="color-box" id="greenBox"></div>
+                <div class="controls">
+                    <label for="greenRange" class="form-label">Esperanza:</label>
+                    <input type="range" id="greenRange" class="form-range" min="0" max="255" value="0">
+                </div>
+                <p>Hex: <span id="greenHex">#00FF00</span></p>
+            </div>
+        </div>
+
+        <!-- Leyenda continua debajo de los hexadecimales -->
+        <p class="credits text-center">
+            Corona Torres Karen 22200722, Porras Lugo Ingrid Alison 22200758 y Gonzalez Ordaz Lizeht Anahi 22200734
+        </p>
+    </div>
+    <script src="script.js"></script> <!-- Vincula el JavaScript externo -->
+</body>
+</html>
